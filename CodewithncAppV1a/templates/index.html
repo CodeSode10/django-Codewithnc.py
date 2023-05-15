@@ -1,0 +1,239 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Start Banner Hero -->
+<div class="banner-wrapper bg-light" style="height: 100vh;">
+    <div id="index_banner" class="banner-vertical-center-index container-fluid pt-5">
+
+        <!-- Start slider -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators visually-hidden">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+
+                    <div class="py-5 row d-flex align-items-center">
+                        <div class="banner-content col-lg-8 col-8 offset-2 m-lg-auto text-left py-5 pb-5">
+                            <h1 class="banner-heading h1 text-dark display-3 mb-0 pb-5 mx-0 px-0 light-300">
+                                Explore With <strong>CodeWithNC</strong>
+                            </h1>
+                            <p class="hide banner-body text-muted py-3 mx-0 px-0">
+                                In CodeWithNC site browse courses and find out the best course for you. It's free !
+                                CodeWithNC is my attempt to teach basics and those coding techniques to
+                                people in short time which took me ages to learn.
+                            </p>
+                            <a class="banner-button btn rounded-pill btn-outline-dark btn-lg px-4"
+                                href="https://www.youtube.com/@codewithnc/" role="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                    class="pb-1 bi bi-fast-forward-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M7.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z" />
+                                    <path
+                                        d="M15.596 7.304a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z" />
+                                </svg> &nbsp;YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev text-decoration-none" href="#carouselExampleIndicators" role="button"
+                data-bs-slide="prev">
+                <i class='bx bx-chevron-left visually-hidden'></i>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next text-decoration-none" href="#carouselExampleIndicators" role="button"
+                data-bs-slide="next">
+                <i class='bx bx-chevron-right visually-hidden'></i>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <!-- End slider -->
+
+    </div>
+</div>
+<!-- End Banner Hero -->
+
+
+<!-- Start main -->
+<section class="bg-dark">
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-2 col-12 text-light align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" fill="currentColor"
+                    class="pb-3 text-light bi bi-cup-hot-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z" />
+                    <path
+                        d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z" />
+                </svg>
+            </div>
+            <div class="col-lg-7 col-12 text-light pt-2">
+                <h3 class="h4 light-300">Quality courses on coding for free.</h3>
+                <p class="light-300 hide">Always trying to provide best quality courses for you by daily articals.</p>
+            </div>
+            <div class="col-lg-3 col-12 pt-4">
+                <a href="{% url 'courses' %}" class="btn btn-primary rounded-pill btn-clock shadow px-4 py-2">View All
+                    Free
+                    Courses</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End -->
+
+
+<section class="py-2 ">
+    <div class="container">
+        <div class="recent-work-header row text-center pb-0">
+            <h2 class="col-md-6 m-auto h2 semi-bold-600 py-5">Fresh Courses</h2>
+        </div>
+    </div>
+</section>
+
+
+<!-- Start Course -->
+<section class="container overflow-hidden pb-5 coursepadd">
+    <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-4 projects">
+
+
+        {% for course in courses %}
+        <div class="col-xl-3 col-md-4 col-sm-6 project ui branding">
+            <a href="{% url 'courseSingle' course.slug %}"
+                class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                <img class="service card-img" src="/media/{{course.image}}" alt="Card image">
+                <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                    <div class="service-work-content text-left text-light">
+                        <span
+                            class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">{{course.created_at}}</span>
+                        <p class="card-text">{{course.title}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+
+
+    </div>
+</section>
+<!-- End -->
+
+
+<!-- start blogs section -->
+<section class="service-wrapper pb-3">
+    <div class="pb=0">
+        <div class="service-tag py-5 bg-dark">
+            <div class="col-md-12">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">Coding</span>
+                    </li>
+                    <li class="nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">Facts</span>
+                    </li>
+                    <li class="filter-btn nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">Gadgets</span>
+                    </li>
+                    <li class="nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">& More</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2 class="h2 text-center col-12 py-5 semi-bold-600">Recent Blogs</h2>
+            <div class="service-header col-2 col-lg-3 text-end light-3">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container overflow-hidden pb-5 coursepadd">
+        <div class="row gx-5 gx-sm-3 gx-lg-5 gy-lg-5 gy-3 pb-4 projects">
+
+            {% for blog in blogs %}
+            <div class="col-xl-3 col-md-4 col-sm-6 project ui branding">
+                <a href="{% url 'blogSingle' blog.slug %}"
+                    class="service-work card border-0 text-white shadow-sm overflow-hidden mx-5 m-sm-0">
+                    <img class="service card-img" src="/media/{{blog.image}}" alt="Card image">
+                    <div class="service-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="service-work-content text-left text-light">
+                            <span
+                                class="btn btn-outline-light rounded-pill mb-lg-3 px-lg-4 light-300">{{blog.updated_at}}</span>
+                            <p class="card-text">{{blog.title}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+</section>
+<!-- End -->
+
+
+
+<!-- Start Service -->
+<section class="service-wrapper pb-3">
+    <div class="pb-0">
+        <div class="service-tag py-5 bg-dark">
+            <div class="col-md-12">
+                <ul class="nav d-flex justify-content-center">
+                    <li class="nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">Web Development</span>
+                    </li>
+                    <li class="nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">Subscript Courses</span>
+                    </li>
+                    <li class="filter-btn nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">UI/UX</span>
+                    </li>
+                    <li class="nav-item mx-lg-4 hide">
+                        <span class="filter-btn nav-link btn-outline-primary rounded-pill text-light px-4 light-300"
+                            data-filter="#">Other Services</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2 class="h2 text-center col-12 py-5 semi-bold-600">Services Offering</h2>
+            <div class="service-header col-2 col-lg-3 text-end light-3">
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center padd container">
+        <div class="row gy-5 g-lg-5 mb-4">
+
+            {% for service in services %}
+            <div class="col-md-4 mb-3">
+                <a href="{% url 'contact' %}" class="recent-work card border-0 shadow-lg overflow-hidden">
+                    <img class="recent-work-img card-img" src="/media/{{service.image}}" alt="Card image">
+                    <div class="recent-work-vertical card-img-overlay d-flex align-items-end">
+                        <div class="recent-work-content text-start mb-3 ml-3 text-dark">
+                            <h3 class="card-title light-300">{{service.title}}</h3>
+                            <p class="card-text">{{service.content|safe}}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+<!-- End -->
+
+{% endblock %}

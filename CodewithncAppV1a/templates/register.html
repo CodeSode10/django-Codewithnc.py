@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Start Banner Hero -->
+<section class="bg-light">
+    <div class="container py-4">
+        <div class="row align-items-center justify-content-between py-2">
+            <!-- Start Contact Form -->
+            <div class="col-lg-6 ">
+                <h2 class="text-center pb-4">A̶d̶m̶i̶n̶ ̶S̶i̶g̶n̶U̶p̶</h2>
+                <div class="contact-form row" method="post" action="" role="form">
+                    
+                    <div class="col-12">
+                        <div class="form-floating mb-4 text-center">
+                            <input type="email" class="form-control form-control-lg light-300" id="SignupUsername"
+                                name="SignupUsername" placeholder="Subject">
+                            <label for="SignupUsername light-300">E-mail or Username</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12">
+                        <div class="form-floating mb-4 text-center">
+                            <input type="password" class="form-control form-control-lg light-300" id="SignupPassword"
+                                name="SignupPassword" placeholder="Subject">
+                            <label for="SignupPassword light-300">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-12 m-auto text-center">
+                        <button onclick="register()" type="submit" style="width:100%;"
+                            class="btn btn-primary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Sign-Up
+                            Admin</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-img col-lg-5 align-items-end col-md-4 signup">
+                <img src="/media/assets/img/loginboy.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

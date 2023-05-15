@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Start Banner Hero -->
+<section class="bg-light">
+    <div class="container py-4">
+        <div class="row align-items-center justify-content-between py-2">
+
+            <div class="col-lg-6 ">
+                <h2 class="text-center pb-4">U̶s̶e̶r̶ ̶L̶o̶g̶i̶n̶</h2>
+                <div class="contact-form row" method="post" action="" role="form">
+                {% csrf_token %}
+                    <div class="col-12">
+                        <div class="form-floating mb-4 text-center">
+                            <input type="text" class="form-control form-control-lg light-300" id="loginUsern"
+                                name="loginUsern" placeholder="Subject">
+                            <label for="loginUsern light-300">Username</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating mb-4 text-center">
+                            <input type="Password" class="form-control form-control-lg light-300" id="loginPassw"
+                                name="loginPassw" placeholder="Subject">
+                            <label for="loginPassw light-300">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-12 m-auto text-center">
+                        <button onclick="ud()" type="submit" style="width:100%;"
+                            class="btn btn-dark rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Login</button>
+                    </div>
+                    <span class="text-center text-muted my-3">or</span>
+                    <div class="col-md-12 col-12 m-auto text-center">
+                        <a href="{% url 'signup' %}"><button type="submit" style="width:100%;"
+                                class="btn btn-primary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Sign
+                                Up as a new user.</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-img col-lg-5 align-items-end col-md-4 logi">
+                <img src="/media/assets/img/login.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

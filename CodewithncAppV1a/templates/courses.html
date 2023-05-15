@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% comment %} {% if request.user.is_authenticated %} {% endcomment %}
+
+<!-- Start Banner Hero -->
+<div class="pt-0">
+    <div id="work_banner" class="banner-wrapper bg-light w-100 mb-3 py-5">
+        <div
+            class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+            <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+                <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Code With CodeWithNC
+                </h1>
+                <h3 class="h4 pb-2 regular-400 hide">I hope ! You'll explore more & more interesting Courses this
+                    year...</h3>
+                <p class="banner-body pb-2 light-300 hide">
+                    We Always trying to solve all your problems by daily videos and articles that will help you to
+                    improve
+                    yourself.
+                    We are improving our video service daily. Read, learn and enjoy videos and give your feedback by
+                    contacting us...
+                </p>
+                <a href="{% url 'contact' %}" alt="contact"><button type="button"
+                        class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Drop Feedback</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Banner Hero -->
+
+    <!-- Start oc -->
+    <section class="container py-5 coursepadd">
+
+        <div class="row projects gx-lg-5">
+            {% for course in courses %}
+            <a href="{% url 'courseSingle' course.slug %}"
+                class="col-sm-6 col-lg-4 text-decoration-none project marketing social business mb-5">
+                <div class="service-work overflow-hidden card mb-5 mx-5 m-sm-0">
+                    <img class="card-img-top" src="/media/{{course.image}}" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title light-300 text-dark"><b>{{course.title}}</b></h5>
+                        <p class="card-text light-300 text-dark">
+                            {{ course.content|striptags|truncatechars:88 }}
+                        </p>
+                        <span class="text-decoration-none text-primary light-300">
+                            Read more <i class='bx bxs-hand-right ms-1'></i>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+
+
+        <nav aria-label="Page navigation example">
+            <ul class="pagination d-flex justify-content-around">
+                
+                {% if courses.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="/news/?page={{courses.previous_page_number}}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                {% endif %}
+
+                {% if courses.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="/news/?page={{courses.next_page_number}}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+
+    </section>
+</div>
+
+{% comment %} {% else %} {% endcomment %}
+
+<!-- <script>
+    alert('Login first & come back again');
+</script>
+
+<div class="position-relative" style="height:54vh;">
+   <div class="text-decoration-none position-absolute top-50 start-50 translate-middle">Login first to view the Page : <a href="{% url 'accessAd' %}">Admin Login</a>
+   </div>
+</div> -->
+
+{% comment %} {% endif %} {% endcomment %}
+<!-- End oc -->
+
+{% endblock content %}
+

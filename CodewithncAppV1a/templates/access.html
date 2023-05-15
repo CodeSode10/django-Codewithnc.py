@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+{% if request.user.is_authenticated %}
+
+<!-- Start Banner Hero -->
+<section class="bg-light py-5">
+    <div class="container py-5">
+
+        <div class="row">
+            <div class="text-center col pb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="164" height="164" fill="currentColor"
+                    class="bi bi-person" viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                </svg>
+                <h4>{{ user.username }}</h4>
+            </div>
+            <div class="col text-center pb-2">
+                <a href="{% url 'admin' %}" alt='loading'><button type="button"
+                        class="btn btn-outline-info btn-lg mt-2 mb-3">AdBlog</button></a>
+                <br>
+                <p class="text-muted my-3">or</p>
+                <a href="{% url 'AccessoutView' %}"><button type="button"
+                        class="btn btn-outline-dark btn-lg mt-3 mb-3">Logout</button></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% else %}
+
+<section class="bg-light">
+    <div class="container py-4">
+        <div class="row align-items-center justify-content-between py-2">
+            <!-- Start Contact Form -->
+            <div class="col-lg-6 ">
+                <div class="contact-form row" method="post" action="" role="form">
+
+                    <div class="col-12">
+                        <h2 class="text-center pb-4">A̶d̶m̶i̶n̶ ̶L̶o̶g̶i̶n̶</h2>
+                        <div class="form-floating mb-4 text-center">
+                            <input type="text" class="form-control form-control-lg light-300" id="loginUsername"
+                                name="loginUsername" placeholder="Subject">
+                            <label for="loginUsername light-300">Admin Username</label>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="form-floating mb-4 text-center">
+                            <input type="Password" class="form-control form-control-lg light-300" id="loginPassword"
+                                name="loginPassword" placeholder="Subject">
+                            <label for="loginPassword light-300">Password</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-12 m-auto text-center">
+                        <button type="submit" style="width:100%;" onclick="login()"
+                            class="btn btn-dark rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Access
+                            Login</button>
+                    </div>
+                    <span class="text-center text-muted my-3">or</span>
+                    <div class="col-md-12 col-12 m-auto text-center">
+                        <a href="{% url 'registerAd' %}"><button type="submit" style="width:100%;"
+                                class="btn btn-primary rounded-pill px-md-5 px-4 py-2 radius-0 text-light light-300">Register
+                                as new Admin.</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-img col-lg-5 align-items-end col-md-4 logi">
+                <img src="/media/assets/img/loginboy.png">
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endif %}
+
+
+{% endblock %}

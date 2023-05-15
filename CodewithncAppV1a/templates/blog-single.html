@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Start Banner Hero -->
+<div id="work_banner" class="banner-wrapper bg-light w-100 mb-3 py-5">
+    <div
+        class="banner-vertical-center-work container text-light d-flex justify-content-center align-items-center py-5 p-0">
+        <div class="banner-content col-lg-8 col-12 m-lg-auto text-center">
+            <h1 class="banner-heading h2 display-3 pb-5 semi-bold-600 typo-space-line-center">Blogs With CodeWithNC
+            </h1>
+            <h3 class="h4 pb-2 regular-400 hide">I hope ! You'll explore more & more interesting blogs this year...</h3>
+            <p class="banner-body pb-2 light-300 hide">
+                We Always trying to solve all your problems by daily blogs and articles that will help you to
+                improve
+                yourself.
+                We are improving our blog service daily. Read, learn and enjoy blogs and give your feedback by
+                contacting us...
+            </p>
+            <a href="{% url 'contact' %}" alt="contact"><button type="button"
+                    class="btn rounded-pill btn-outline-light px-4 me-4 light-300">Drop Feedback</button>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- End Banner Hero -->
+
+
+<!--Start Blog-->
+<section class="container mb-4 py-5">
+    <div class="row justify-content-center pb-4">
+        <div class="col-lg-10">
+            <h1 class="mb-5">{{blog.title}}</h1>
+            <div id="templatemo-slide-link-target" class="card m-4">
+                <img class="img-fluid border rounded" src="/media/{{blog.image}}" alt="Card image cap">
+            </div>
+
+            {% comment %}
+            <div class="worksingle-slide-footer row">
+                <!--Start Controls-->
+                <div class="col-1 align-self-center">
+                    <a href="#multi-item-example" role="button" data-bs-slide="prev">
+                        <i class='bx bxs-chevron-left bx-sm text-dark'></i>
+                    </a>
+                </div>
+                <!--End Controls-->
+
+                <!--Start Carousel Wrapper-->
+                <div id="multi-item-example" class="col-10 carousel slide" data-bs-ride="carousel">
+                    <!--Start Slides-->
+                    <div class="carousel-inner" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-06.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-06-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-05.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-05-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-04.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-04-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-03.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-03-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-01.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-01-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-01.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-01-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-03.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-03-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-02.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-02-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-01.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-01-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-06.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-06-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-01.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-01-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-03.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-03-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-02.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-02-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-01.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-01-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="templatemo-slide-link" href="/media/assets/img/work-slide-06.jpg">
+                                        <img class="img-fluid border rounded"
+                                            src="/media/assets/img/work-slide-06-small.jpg" alt="Product Image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Second slide-->
+
+                    </div>
+                    <!--End Slides-->
+                </div>
+                <!--End Carousel Wrapper-->
+
+                <!--Start Controls-->
+                <div class="col-1 align-self-center text-end">
+                    <a href="#multi-item-example" role="button" data-bs-slide="next">
+                        <i class='bx bxs-chevron-right bx-sm text-dark'></i>
+                    </a>
+                </div>
+                <!--End Controls-->
+
+            </div>
+            {% endcomment %}
+            <!-- End Slider -->
+
+        </div>
+    </div>
+
+
+    <!-- Start content -->
+    <div class="row justify-content-center overflow-auto">
+        <div class="col-lg-10 ml-auto mr-auto pt-3 pb-4">
+            <p class="text-muted light-300">
+                {{blog.content|safe}}
+            </p>
+        </div>
+    </div>
+    <!-- End content -->
+
+    <div class="row justify-content-center mt-4">
+        <div class="col-lg-10">Author : {{blog.user.username}}</div>
+        <div class="col-lg-10">Published on : {{blog.created_at}}</div>
+    </div>
+
+</section>
+<!-- End Blog -->
+{% endblock %}

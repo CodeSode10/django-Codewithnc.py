@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="tex-center justify-content-center container my-5">
+    {% for notification in recent %}
+    <div class="alert alert-{{notification.color}} mb-4" role="alert">
+        <h4 class="alert-heading">{{notification.title}}</h4>
+        <p>{{notification.desc}}</p>
+        <hr>
+        <p class="mb-0 text-muted">{{notification.created_at}}</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
